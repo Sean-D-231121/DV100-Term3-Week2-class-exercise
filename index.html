@@ -13,19 +13,41 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-
+    <!-- Navbar -->
+    <nav class="navbar fixed-top " >
+  <div class="container">
+    <!-- logo -->
+    <a class="navbar-brand" href="#">
+      <img src="assets/Logo.svg" alt="Logo" height="32">
+    </a>
+    <!-- Nav items -->
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/browsePage.html">Browse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/Wishlist.html">Wishlist</a>
+        </li>
+      </ul>
+  </div>
+</nav>
     <!-- ------------------------------------------------------------------------------------------------ -->
     <!-- Carousel -->
 
-    <div id="carouselExample" class="carousel carousel-dark slide">
+    <div id="carouselExample" class="carousel carousel-dark ">
       <div class="carousel-inner">
         <!-- Slide 1 -->
-        <div class="carousel-item">
+        <div class="carousel-item active">
           <div class="container">
             <div class="row full-height">
               <div class="col align-self-center">
                 <h1>Elevate Your Environment with Everlasting Beauty</h1>
+                <a href="./pages/browsePage.html">
                 <button class="mt-4">Browse Plants</button>
+                </a>
               </div>
               <div class="col align-self-end">
                 <img src="./assets/hero-image.png" class="hero-image" id="hero-image">
@@ -35,14 +57,19 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item active" id="slide-2">
+        <div class="carousel-item">
+          <div class="container">
           <div class="row full-height">
             <div class="col align-self-center">
               <h1>Support the beauty of nature with us</h1>
+              <a href="pages/Wishlist.html">
+              <button class="mt-4">Go to Wishlist</button>
+              </a>
             </div>
             <div class="col align-self-end">
               <img src="./assets/hero-image-2.png" class="hero-image-2" id="hero-image-2" alt="hero-image-2">
             </div>
+          </div>
           </div>
         </div>
 
@@ -61,39 +88,40 @@
     </div>
     <div class="container">
       <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
+  <div class="accordion-item accordion-top">
     <h2 class="accordion-header">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
+        Why you should have plants?
       </button>
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        
+Having plants in your living space is a simple yet incredibly beneficial decision. Not only do they add a touch of natural beauty and vibrant colors to your environment, but they also offer numerous health benefits. Plants naturally purify the air, filtering out harmful toxins and pollutants while releasing oxygen, promoting cleaner and fresher indoor air quality. Additionally, caring for plants can be a rewarding and therapeutic experience, reducing stress and anxiety levels. Whether you're a seasoned gardener or a novice plant parent, incorporating plants into your daily life can enhance your well-being and create a soothing, harmonious atmosphere that nurtures both your body and mind.
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
+        How can you help the environment?
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+     Having plants can significantly benefit the environment in various ways. One of the most crucial roles of plants is their ability to absorb carbon dioxide during photosynthesis, acting as natural carbon sinks. By reducing the concentration of this greenhouse gas in the atmosphere, plants help mitigate climate change and its adverse effects. Additionally, plants contribute to soil health through root systems that prevent erosion and promote nutrient cycling. They also support biodiversity by providing habitats and food sources for a wide range of animals and insects. Moreover, trees, in particular, play a vital role in reducing urban heat island effects and conserving energy by providing shade and cooling surrounding areas. Overall, having plants in our environment is a simple yet powerful step towards creating a greener, healthier planet.
       </div>
     </div>
   </div>
-  <div class="accordion-item">
+  <div class="accordion-item accordion-bottom">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
+        What is global warming?
       </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        Global warming refers to the long-term increase in Earth's average surface temperature, primarily caused by the buildup of greenhouse gases in the atmosphere. These gases, including carbon dioxide (CO2), methane (CH4), nitrous oxide (N2O), and others, trap heat from the sun that would otherwise radiate back into space. As human activities, such as burning fossil fuels, deforestation, and industrial processes, release substantial amounts of greenhouse gases into the atmosphere, the natural balance is disrupted, leading to a heightened greenhouse effect. Consequently, the Earth's temperature rises, causing various consequences, such as melting glaciers and ice caps, rising sea levels, more frequent and intense heatwaves, extreme weather events, and disruptions to ecosystems and biodiversity. Global warming poses a significant challenge to our planet, necessitating urgent collective efforts to mitigate its impacts and transition to a more sustainable and low-carbon future.
       </div>
     </div>
   </div>

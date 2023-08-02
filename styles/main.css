@@ -33,7 +33,17 @@ button {
 
 /* ---------------------------------------- */
 /* Bootstrap Component Overrides */
-
+/* navigation */
+ .nav-link{ 
+   font-family: 'Lato', sans-serif; 
+   color: rgba(0, 0, 0, 0.6);
+}
+.nav-link:hover {
+    color: #18382B ;
+}
+.nav-link.active{
+    border-bottom: 2px solid #18382B ;
+}
 /* Carousel */
 
 .carousel-item {
@@ -51,8 +61,32 @@ button {
     border-radius: 50%;
 }
 
+
 .carousel-control-next {
     left: 84px;
+}
+
+/* Card */
+
+.card {
+    border-radius: 150px 150px 12px 12px;
+    background: #f3f3f3;
+    text-align: center;
+    height: 440px;
+    border: none;
+}
+.card-img-top {
+    height: 320px;
+    margin: auto;
+    width: auto;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card-img-top.small{
+    height: 200px;
+}
+.card-text {
+    color:#18382B
 }
 
 /* ---------------------------------------------------------------- */
@@ -68,3 +102,62 @@ button {
     position: relative;
     bottom: -100px;
 }
+/* Accordion Home page */
+.accordion-button{
+    background-color: #18382B;
+    color: white
+}
+.accordion-body{
+    background-color: #E6F2E9;
+}
+.accordion-button:not(.collapsed){
+    background-color: #7ec7aa;
+    color: rgb(34, 34, 181);
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232222b5'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}
+.accordion-button:focus{
+    border: none;
+    box-shadow: none;
+}
+.accordion-button.collapsed {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-top{
+    margin-top: 50px;
+}
+.accordion-bottom{
+    margin-bottom: 50px;
+}
+/* Wishlist page */
+.header-wishlist{
+    text-align: center;
+}
+.table-image-size{
+    height:60px;
+    width: 40px;
+}
+.plant-table-head th{
+    background-color: #18382B;
+    color: #f3f3f3;
+    border-color:#f3f3f3;
+}
+
+.removeButton{
+    width: 50%;
+    height:fit-content;
+    margin: auto;
+    border-radius: 20px;
+
+}
+.removeButton:hover{
+    background-color: #E6F2E9;
+    color: black;
+}
+.table{
+    --bs-table-hover-color: white;
+    --bs-table-hover-bg:  #7ec7aa;;
+}
+.table td{
+    background-color:#f3f3f3;
+}
+
