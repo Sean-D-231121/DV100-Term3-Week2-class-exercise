@@ -48,58 +48,26 @@
       <!-- header -->
       <h2>Browse Plants</h2>
       <!-- list of plant cards -->
-      <div class="row">
+      <div class="row" id="plantsContainer">
+        <template id="plantCardTemplate">
         <div class="col-4">
           <!-- Card -->
           <div class="card">
             <img
-              src="../assets/plant1.png"
+              src="../assets/plant2.png"
               class="card-img-top"
               alt="Image of a Ficus tree"
             />
             <div class="card-body">
-              <h5 class="card-title">Ficus tree</h5>
-              <p class="card-text price" >R250</p>
-              <p class="card-text description">
+              <h5 class="card-title" id="nameText">Ficus tree</h5>
+              <p class="card-text price" id="priceText" >R250</p>
+              <p class="card-text description" id="descriptionText">
                 Hello this is a tree.
               </p>
             </div>
           </div>
-        </div>
-        <div class="col-4">
-          <!-- Card -->
-          <div class="card">
-            <img
-              src="../assets/Red-Rose.png"
-              class="card-img-top"
-              alt="Red Rose"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Red Rose</h5>
-              <p class="card-text price" >R250</p>
-              <p class="card-text description" >
-                Hello this is a Flower!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <!-- Card -->
-          <div class="card">
-            <img
-              src="../assets/White-Lily.png"
-              class="card-img-top"
-              alt="Red Rose"
-            />
-            <div class="card-body">
-              <h5 class="card-title">White Lily</h5>
-              <p class="card-text price" >R250</p>
-              <p class="card-text description" >
-                Hello this is a Lily!
-              </p>
-            </div>
-          </div>
-        </div>
+        </div>  
+       </template>
       </div>
     </div>
 

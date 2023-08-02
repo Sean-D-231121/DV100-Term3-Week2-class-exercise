@@ -143,16 +143,12 @@ button {
 }
 
 .removeButton{
-    width: 50%;
-    height:fit-content;
-    margin: auto;
-    border-radius: 20px;
+    cursor: pointer;
+    font-size: 30px;
 
 }
-.removeButton:hover{
-    background-color: #E6F2E9;
-    color: black;
-}
+
+
 .table{
     --bs-table-hover-color: white;
     --bs-table-hover-bg:  #7ec7aa;;
