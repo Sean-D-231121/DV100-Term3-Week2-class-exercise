@@ -47,30 +47,133 @@
     <div class="container mt-5 pt-5">
       <!-- header -->
       <h2>Browse Plants</h2>
+      <!-- Filter & Sorting -->
+      <div class="row">
+        <!-- filter radio buttons -->
+        <div
+          class="btn-group col-auto"
+          role="group"
+        >
+          <input
+            type="radio"
+            class="btn-check"
+            name="filterRadio"
+            id="allPlantFilter"
+            value=""
+            autocomplete="off"
+            checked
+          />
+          <label class="btn btn-outline-success" for="allPlantFilter">All plants</label>
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="filterRadio"
+            id="brightLightFilter"
+            value="bright"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-success" for="brightLightFilter"><i class="bi bi-brightness-high"></i> Bright light</label>
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="filterRadio"
+            id="lowLightFilter"
+            value="low"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-success" for="lowLightFilter"><i class="bi bi-brightness-low"></i>Low light</label>
+           <input
+            type="radio"
+            class="btn-check"
+            name="filterRadio"
+            id="onSaleFilter"
+            value="onSale"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-success" for="onSaleFilter"><i class="bi bi-currency-dollar"></i>On sale</label>
+        </div>
+        <div
+          class="btn-group col-auto"
+          role="group"
+        >
+          <input
+            type="radio"
+            class="btn-check"
+            name="sortRadio"
+            id="defaultSort"
+            value="date added"
+            autocomplete="off"
+            checked
+          />
+          <label class="btn btn-outline-secondary" for="defaultSort"><i class="bi-calendar4"></i>Newest to oldest</label>
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="sortRadio"
+            id="priceSort"
+            value="low-to-high"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-secondary" for="priceSort"><i class="bi-sort-down-alt"></i>Price : Low to High</label>
+          <input
+            type="radio"
+            class="btn-check"
+            name="sortRadio"
+            id="alphaSort"
+            value="sortAlpha"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-secondary" for="alphaSort"><i class="bi-sort-alpha-down"></i>Alphabetically</label>
+          
+        </div>
+      </div>
       <!-- list of plant cards -->
       <div class="row" id="plantsContainer">
-        <template id="plantCardTemplate">
-        <div class="col-4">
-          <!-- Card -->
-          <div class="card">
-            <img
-              src="../assets/plant2.png"
-              class="card-img-top"
-              alt="Image of a Ficus tree"
-            />
-            <div class="card-body">
-              <h5 class="card-title" id="nameText">Ficus tree</h5>
-              <p class="card-text price" id="priceText" >R250</p>
-              <p class="card-text description" id="descriptionText">
-                Hello this is a tree.
-              </p>
+        <!-- plant cards are appended here -->
+      </div>
+    
+      <template id="plantCardTemplate">
+          <div class="col-4">
+            <!-- Card -->
+            <div class="card">
+              <img
+                src="../assets/plant2.png"
+                class="card-img-top"
+                alt="Image of a Ficus tree"
+              />
+              <div class="card-body">
+                <h5 class="card-title" id="nameText">Ficus tree</h5>
+                <p class="card-text price" id="priceText">R250</p>
+                <p class="card-text description" id="descriptionText">
+                  Hello this is a tree.
+                </p>
+              </div>
             </div>
           </div>
-        </div>  
-       </template>
-      </div>
+        </template>
     </div>
-
+    <template id="plantCardTemplate">
+          <div class="col-4">
+            <!-- Card -->
+            <div class="card">
+              <img
+                src="../assets/plant2.png"
+                class="card-img-top"
+                alt="Image of a Ficus tree"
+              />
+              <div class="card-body">
+                <h5 class="card-title" id="nameText">Ficus tree</h5>
+                <p class="card-text price" id="priceText">R250</p>
+                <p class="card-text description" id="descriptionText">
+                  Hello this is a tree.
+                </p>
+              </div>
+            </div>
+          </div>
+        </template>
     <!-- Javascript -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
